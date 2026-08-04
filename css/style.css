@@ -1,0 +1,264 @@
+ /* ========= Global css start ===========  */
+
+:root {
+    --black-gray-color: #1a1a1a;
+    --black-color: #000000;
+    --orange-color: #e65c00;
+    --white-color: #ffffff;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--black-gray-color);
+    background: radial-gradient(circle at 20% 30%, #ffffff 0%, #f0f0f0 100%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+
+ /* ── Header / Nav ── */
+header {
+    padding: 1.2rem 0;
+    border-bottom: 1px solid #e6e6e6;
+    background-color: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(6px);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.logo {
+    font-size: 1.6rem;
+    font-weight: 800;
+    letter-spacing: -0.02em;
+    color: var(--black-color);
+    text-decoration: none;
+}
+
+.logo span {
+    color: var(--orange-color);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+    list-style: none;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--black-gray-color);
+    transition: color 0.2s ease;
+    padding: 0.25rem 0;
+    border-bottom: 2px solid transparent;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+    color: var(--orange-color);
+    border-bottom-color: var(--orange-color);
+}
+
+.nav-cta {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    padding: 0.5rem 1.4rem;
+    border-radius: 6px;
+    border-bottom: none ;
+    font-weight: 600;
+}
+
+.nav-cta:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    border-bottom: none;
+}
+
+.btn-outline-orange {
+    display: inline-block;
+    background-color: transparent;
+    color: var(--orange-color);
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.8rem 2.4rem;
+    border-radius: 6px;
+    border: 2px solid var(--orange-color);
+    text-decoration: none;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.btn-outline-orange:hover {
+    background-color: var(--orange-color);
+    color: var(--white-color);
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(230, 92, 0, 0.15);
+}
+
+/* containers globlly for every page and section */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+    /* ── font size and color for text (body 16–18px) ── */
+p, li, .text-body {
+        font-size: 1rem;
+        color: var(--black-gray-color);
+    }
+
+    /* ── Footer section ── */
+footer {
+    background-color: var(--black-color);
+    color: #e6e6e6;
+    padding: 2.5rem 0 1.8rem;
+    border-top: 3px solid var(--orange-color);
+}
+
+.footer-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.footer-logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--white-color);
+}
+
+.footer-logo span {
+    color: var(--orange-color);
+}
+
+.footer-links {
+    display: flex;
+    gap: 1.8rem;
+    flex-wrap: wrap;
+}
+
+.footer-links a {
+    color: #cccccc;
+    text-decoration: none;
+    font-size: 0.95rem;
+    transition: color 0.2s ease;
+}
+
+.footer-links a:hover {
+    color: var(--orange-color);
+}
+
+.footer-copy {
+    font-size: 0.85rem;
+    color: #888888;
+    margin-top: 0.5rem;
+    width: 100%;
+    text-align: center;
+    border-top: 1px solid #222222;
+    padding-top: 1.5rem;
+}
+
+ /* ========= Global css end ===========  */
+
+
+
+ /* ========= home css start ===========  */
+
+
+ /* ========= home css end ===========  */
+
+
+
+ /* ========= about css start ===========  */
+
+
+ /* ========= about css end ===========  */
+
+
+
+ /* ========= contact css start ===========  */
+
+
+ /* ========= contact css end ===========  */
+
+
+
+        /* ── Responsive design media query tablet ── */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 1rem 1.5rem;
+        width: 100%;
+    }
+
+    .footer-grid {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .footer-links {
+        justify-content: center;
+    }
+
+    /* === home === */
+
+    /* === about ===  */
+
+    /* === contact === */
+
+}
+
+        /* ── Responsive design media query mobile small screen ── */
+
+@media (min-width: 640px) {
+    p, li, .text-body {
+                font-size: 1.125rem;
+    }
+
+    /* === home === */
+
+    /* === about ===  */
+
+    /* === contact === */
+
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 0 1rem;
+    }
+
+    /* === home === */
+
+    /* === about ===  */
+
+    /* === contact === */
+}
